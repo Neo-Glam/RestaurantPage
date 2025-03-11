@@ -2,7 +2,7 @@ import "./styles.css";
 import { homepage } from "./home";
 import { about } from "./about";
 import { cocktails } from "./menu";
-
+import logoBar from "./logo.png";
 
 const content = document.querySelector("#content")
 
@@ -43,6 +43,14 @@ menu.addEventListener("click", ()=>{
 })
 
 const nav = document.querySelector("#nav");
+
+const logo = document.createElement("img")
+logo.src = logoBar
+logo.classList.add("logo")
+
+const header = document.querySelector("#header")
+
+nav.appendChild(logo)
 
 nav.appendChild(home);
 nav.appendChild(menu);

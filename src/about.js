@@ -26,7 +26,6 @@ export const about = function(){
     info.appendChild(soc);
 
     content.appendChild(title);
-    content.appendChild(sep);
     content.appendChild (info);
 
 }

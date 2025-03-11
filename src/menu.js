@@ -6,9 +6,13 @@ export const cocktails = function(){
 
     const flavourOne = document.createElement("p");
     flavourOne.innerText = "A drink for every story, a story for every drink.";
+    flavourOne.classList.add("flavour")
+
 
     const flavourTwo = document.createElement("p");
     flavourTwo.innerText = "No matter who you are or where you come from, there's always a drink waiting for you at VA-11 HALL-A.";
+    flavourTwo.classList.add("flavour");
+
 
     const menuTitle = document.createElement("ul");
     menuTitle.innerText = "SIGNATURE COCKTAILS";
@@ -52,7 +56,6 @@ export const cocktails = function(){
 
     content.appendChild(title);
     content.appendChild(flavourOne);
-    content.appendChild(sep);
     content.appendChild(menuTitle);
     content.appendChild(flavourTwo);
 

@@ -54,9 +54,79 @@
 
 body{
     font-family: "Iceland", sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-template-rows: 1fr 100%;
+    --primcolor : #5E548E;
+    --secondcolor : #231942;
+    --tercolor : #9F86C0;
+    background-color: var(--secondcolor);
+    background-image: url(cyberpunk-jungle.jpg);
+    font-size: 17px;
 }
 
-  
-div{
-    border: solid black;
+#header{
+    background-color: var(--primcolor);
+    grid-column-start: 1;
+    grid-column-end: 4;
+    -webkit-box-shadow: 0px 16px 12px 3px rgb(0, 0, 0); 
+    box-shadow: 0px 16px 12px 3px rgb(0, 0, 0);
 }
+
+#nav{
+    display: grid;
+    grid-template-columns: 5fr  100px 100px 100px;
+    padding-left: 30px;
+
+}
+
+.logo{
+    aspect-ratio: 1/1;
+    width: 80px;
+    position: relative;
+}
+
+button{
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    width: fit-content;
+}
+
+#content{
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-top: 20px;
+    min-width: 700px;
+    background-color: rgb(255, 255, 255);
+    grid-column-start: 2;
+    grid-column-end: 3;
+    height: 100vh;
+    -webkit-box-shadow: inset 0px 16px 10px -1px rgba(0,0,0,0.32); 
+    box-shadow: inset 0px 16px 10px -1px rgba(0,0,0,0.32);
+    overflow: auto;
+
+}
+
+.title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.flavour{
+    font-style: italic;
+}
+
+ul{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    list-style: none;
+}
+
+li{
+    margin-top: 20px;
+}
+
+.separator{
+    height: 30px;
+}
+
