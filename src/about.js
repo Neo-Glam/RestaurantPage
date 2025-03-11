@@ -1,6 +1,6 @@
 export const about = function(){
     const title = document.createElement("h1");
-    title.innerText = "CONTACT US";
+    title.innerText = "VA-11 HALL-A – Contact Infos";
     title.classList.add("title");
 
     const info = document.createElement("ul");

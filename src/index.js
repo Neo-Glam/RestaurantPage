@@ -1,6 +1,7 @@
 import "./styles.css";
 import { homepage } from "./home";
 import { about } from "./about";
+import { cocktails } from "./menu";
 
 
 const content = document.querySelector("#content")
@@ -34,7 +35,7 @@ menu.innerText = "MENU"
 
 menu.addEventListener("click", ()=>{
     content.innerHTML = "";
-    homepage();
+    cocktails();
     menu.disabled=true;
     contact.disabled=false;
     home.disabled=false;
@@ -46,3 +47,6 @@ const nav = document.querySelector("#nav");
 nav.appendChild(home);
 nav.appendChild(menu);
 nav.appendChild(contact);
+
+homepage();
+home.disabled=true;
