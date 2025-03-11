@@ -1,11 +1,12 @@
 export const homepage = function(){
+
     
     const title = document.createElement("h1");
     title.innerText = "WELCOME TO VA-11 HALLL-A";
     title.classList.add("title");
 
     const flavourOne = document.createElement("p");
-    flavourOne.innerText="the last haven in a neon-lit, dystopian cyberpunk world. Hidden in the shadows of Glitch City, this intimate bar serves more than just drinks—it serves stories. Here, bartenders are confidants, and every cocktail is a key to unraveling the lives of the city’s lost souls. Step inside, let the synthwave beats wash over you, and immerse yourself in a world where every sip tells a tale"
+    flavourOne.innerText="The last haven in a neon-lit, dystopian cyberpunk world. Hidden in the shadows of Glitch City, this intimate bar serves more than just drinks—it serves stories. Here, bartenders are confidants, and every cocktail is a key to unraveling the lives of the city’s lost souls. Step inside, let the synthwave beats wash over you, and immerse yourself in a world where every sip tells a tale"
     flavourOne.classList.add("flavour")
 
     const sep = document.createElement("div");
