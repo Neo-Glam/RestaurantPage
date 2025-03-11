@@ -1,5 +1,6 @@
 import "./styles.css";
 import { homepage } from "./home";
+import { about } from "./about";
 
 
 const content = document.querySelector("#content")
@@ -21,7 +22,7 @@ contact.innerText = "CONTACT"
 
 contact.addEventListener("click", ()=>{
     content.innerHTML = "";
-    homepage();
+    about();
     contact.disabled=true;
     home.disabled=false;
     menu.disabled=false;
